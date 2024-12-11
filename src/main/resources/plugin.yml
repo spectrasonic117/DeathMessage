@@ -1,0 +1,20 @@
+name: DeathMessage
+version: '${version}'
+main: com.spectrasonic.deathMessage.Main
+api-version: '1.21'
+authors:
+  - Spectrasonic
+
+commands:
+  revive:
+    description: Revive players from spectator mode
+    usage: /revive <player|all|reload>
+    permission: deathspectator.revive
+
+permissions:
+  deathspectator.revive:
+    description: Allows reviving players
+    default: op
+  deathspectator.bypass:
+    description: Bypass death spectator mode
+    default: op
